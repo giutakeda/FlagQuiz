@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context="com.example.giuliano.flaquiz.Main2Activity">
+
+
+    <ImageView
+        android:id="@+id/iv_pais"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+
+    <Button
+        android:id="@+id/button_opt1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/iv_pais"
+        android:layout_alignStart="@+id/iv_pais"
+        android:layout_below="@+id/iv_pais"
+        android:onClick="btn1"
+        android:textSize="25sp"
+        android:layout_marginTop="8dp"
+        android:text="Button" />
+    <Button
+        android:id="@+id/button_opt2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/iv_pais"
+        android:layout_alignStart="@+id/iv_pais"
+        android:layout_below="@+id/button_opt1"
+        android:onClick="btn2"
+        android:textSize="25sp"
+        android:layout_marginTop="8dp"
+        android:text="Button" />
+    <Button
+        android:id="@+id/button_opt3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/iv_pais"
+        android:layout_alignStart="@+id/iv_pais"
+        android:layout_below="@+id/button_opt2"
+        android:onClick="btn3"
+        android:textSize="25sp"
+        android:layout_marginTop="8dp"
+        android:text="Button" />
+    <Button
+        android:id="@+id/button_opt4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/iv_pais"
+        android:layout_alignStart="@+id/iv_pais"
+        android:layout_below="@+id/button_opt3"
+        android:onClick="btn4"
+        android:textSize="25sp"
+        android:layout_marginTop="8dp"
+        android:text="Button" />
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        />
+
+    <TextView
+        android:id="@+id/textView_erros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resultado"
+        android:textColor="#F55"
+        android:layout_alignEnd="@+id/iv_pais"
+        android:layout_alignRight="@+id/iv_pais" />
+
+</RelativeLayout>
